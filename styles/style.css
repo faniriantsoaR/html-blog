@@ -1,0 +1,210 @@
+html, body{
+    margin: 0 ;
+    padding: 0 ;
+    font-size: 16px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    line-height: 1.5 ;
+    color: rgb(88, 88, 88) ;
+}
+
+a{
+    text-decoration: none ;
+}
+
+button, .bouton{
+    border: 1px solid rgb(255, 119, 187) ;
+    display: inline-block ;
+    color: #fff ;
+    font-weight: bold ;
+    background-color: rgb(255, 133, 194) ;
+    cursor: pointer ;
+    transition: .5s all ;
+    padding: .7em 2.3em ;
+}
+
+button:hover, .bouton:hover{
+    background-color: rgb(95, 0, 48) ;
+    border: 1px solid rgb(65, 12, 38)
+}
+
+header{
+    display: grid ;
+    padding: 0 20px ;
+    background:linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), url(../images/bg2.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    
+}
+
+header *{
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3) ;
+}
+
+#menu{
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+}
+
+#menu ul{
+    list-style: none ;
+    padding: 0 ;
+}
+
+#logo a{
+    font-size: 25px ;
+    font-weight: bold ;
+    color: #fff ;
+    font-family: Georgia, Times, serif ;
+}
+
+#menu ul li{
+    display: inline-block ;
+    padding: 10px ;
+}
+
+#menu ul li a {
+    color:#fff;
+    font-weight: bold ;
+    transition: .8s ;
+}
+
+#menu ul li a:hover{
+    text-decoration: underline ;
+}
+
+#imageprincipale{
+    color: #fff ;
+    width: 45% ;
+    text-align: center ;
+    margin: 110px auto 200px auto ;
+}
+
+#imageprincipale h1{
+    font-size: 2.3em ;
+}
+
+#imageprincipale p{
+    font-size: 1.2em ;
+}
+
+.marge{
+    margin: 30px 0 ;
+}
+
+section{
+    box-sizing: border-box ;
+    padding: 30px 40px ;
+}
+
+.section-titre{
+    font-family: Georgia, Times, serif ;
+    text-align: center ;
+    font-size: 2em ;
+    color: rgb(255, 49, 111) ;
+}
+
+.articles{
+    display: grid ;
+    grid-gap: 1.2em ;
+    grid-template-columns: 32.333% 32.333% 32.333% ;
+    overflow: hidden;
+}
+
+@media(max-width:780px){
+    .articles{
+        grid-template-columns: 100% ;
+    }
+}
+
+h4{
+    color: rgb(119, 62, 86) ;
+    text-transform: uppercase ;
+}
+
+.modele-article .image-conteneur{
+    display: block ;
+    width: 100% ;
+    position: relative ;
+    overflow: hidden;
+    height: 0;
+    padding-top: 100% ;
+}
+
+.image-conteneur .image-mask{
+    position: absolute;
+    top: 0;
+    left:0 ;
+    height: 100%;
+    width: 100%;
+}
+
+.modele-article .image-conteneur img{
+    width: 100% ;
+    object-fit: cover ;
+    min-width: 100%;
+    min-height: 100% ;
+    transition: 1s transform ;
+}
+
+.modele-article .image-conteneur:hover img{
+    transform: scale(1.1) ;
+}
+
+#apropos{
+    display: grid ;
+    grid-gap: 1.2em ;
+    grid-template-columns: 70% 30% ;
+}
+
+#travail{
+    width: 80% ;
+    margin: auto ;
+}
+
+.mizara-2{
+    display: grid ;
+    grid-gap: 1.8em ;
+    grid-template-columns: 50% 50% ;
+    align-items: center ;
+}
+
+@media(max-width: 780px){
+    .mizara-2, #apropos{
+        grid-template-columns: 100% ;
+    }
+
+    #travail{
+        width: 100% ;
+    }
+}
+
+#travail img{
+    width: 100% ;
+}
+
+#travail h4{
+    margin: 0 ;
+    font-size: 17px ;
+}
+
+#travail p{
+    font-size: 16px ;
+}
+
+#apropos .section-titre{
+    text-align: left ;
+    font-size: 1.6em ;
+}
+
+footer{
+    background-color: rgb(255, 161, 208) ;
+    color: #fff ;
+}
+
+footer p{
+    margin: 0 ;
+    padding: 20px 30px ;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3) ;
+    text-align: center ;
+}
